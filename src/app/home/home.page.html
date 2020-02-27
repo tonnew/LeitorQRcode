@@ -1,14 +1,15 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      QR Code
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-button exapand="block" (click)="escanearQRcode()">Escanear</ion-button> 
+    <p>Resultado: <strong><a [href]="resultado" target="_blank"> {{resultado}} </a></strong></p>
+
+
+ 
 </ion-content>
